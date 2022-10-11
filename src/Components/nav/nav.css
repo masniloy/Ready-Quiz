@@ -1,0 +1,15 @@
+.options {
+    text-decoration: none;
+    color: #0c223e;
+
+}
+
+.navb {
+    background-color: #7d9bc1;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.options :hover {
+    color: #f1bd2a;
+}
