@@ -1,17 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Home from './Components/Home/Home';
+import Topics from './Components/Topics/Topics';
 import Nav from './Components/Nav/Nav';
-import Header from './Components/Header/Header';
+import Main from './Main/Main';
+import Statistics from './Components/Statistics/Statistics';
+import Blog from './Components/Blog/Blog';
+import Head from './Components/Head/Head';
+
 
 function App() {
   const router = createBrowserRouter([
-    { path: '/', element: <Nav></Nav> },
-    { path: 'nav', element: <Nav></Nav> },
-    { path: 'home', element: <Home></Home> },
-    { path: 'about', element: <div>about</div> },
-    { path: 'header', element: <Header></Header> }
+    {
+      path: '/', element: <Main></Main>, children: [
+        { path: '/', element: <Head></Head> },
+        { path: 'Topics', element: <Topics></Topics> },
+        { path: 'statistics', element: <Statistics></Statistics> },
+        { path: 'Blog', element: <Blog></Blog> },
+        { path: 'Head', element: <Head></Head> }
+
+
+      ]
+    },
+    { path: 'nav', element: <Main></Main> }
+
+
   ])
   return (
     <div className="App">
