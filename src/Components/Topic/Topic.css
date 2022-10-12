@@ -1,5 +1,6 @@
 .topic {
-    background-color: #0c223e;
+    background-color:
+        #b3dcd8;
     margin: 20px;
 }
 
@@ -11,4 +12,13 @@
 
 .title {
     font-size: 60px;
+    color: #0c223e;
+}
+
+.button {
+    background-color: #7d9bc1;
+}
+
+.total {
+    color: #0c223e;
 }

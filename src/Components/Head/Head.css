@@ -1,5 +1,5 @@
 .head {
-    background-image: url(file:///C:/Users/Niloy/Downloads/istockphoto-532259405-612x612.webp);
+    background-image: url(file:///C:/Users/Niloy/Downloads/icons8-team-dhZtNlvNE8M-unsplash.webp);
 
     background-repeat: no-repeat;
     height: 670px;
@@ -18,7 +18,7 @@
 }
 
 .head p {
-    color: #7d9bc1;
+    color: #0c223e;
 }
 
 .button {
@@ -27,7 +27,7 @@
     padding-bottom: 10px;
     padding-right: 40px;
     padding-left: 40px;
-    background-color: #0c223e;
-    color: #7d9bc1;
+    background-color: #7d9bc1;
+    color: white;
     border-radius: 5px;
 }
