@@ -4,7 +4,7 @@ import Nav from '../Components/Nav/Nav';
 import Topics from '../Components/Topics/Topics';
 const Main = () => {
     return (
-        <div>
+        <div >
             <Nav></Nav>
             <Outlet></Outlet>
         </div>
