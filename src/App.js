@@ -6,6 +6,7 @@ import Main from './Main/Main';
 import Statistics from './Components/Statistics/Statistics';
 import Blog from './Components/Blog/Blog';
 import Head from './Components/Head/Head';
+import Topic from './Components/Topic/Topic';
 
 
 function App() {
@@ -15,19 +16,20 @@ function App() {
         { path: '/', element: <Head></Head> },
         {
           path: 'Topics',
-          loader: () => {
+          loader: async () => {
             return fetch('https://openapi.programming-hero.com/api/quiz')
           },
           element: <Topics></Topics>
         },
         { path: 'statistics', element: <Statistics></Statistics> },
         { path: 'Blog', element: <Blog></Blog> },
-        { path: 'Head', element: <Head></Head> }
+        { path: 'Head', element: <Head></Head> },
 
 
       ]
     },
-    { path: 'nav', element: <Main></Main> }
+    { path: 'nav', element: <Main></Main> },
+    { path: 'Topic', element: <Topic></Topic> }
 
 
   ])

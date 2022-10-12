@@ -1,0 +1,14 @@
+.topic {
+    background-color: #0c223e;
+    margin: 20px;
+}
+
+.image {
+    width: 200px;
+    height: 200px;
+
+}
+
+.title {
+    font-size: 60px;
+}
