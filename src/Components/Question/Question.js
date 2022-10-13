@@ -11,18 +11,9 @@ const Question = (questions) => {
     return (
         <div className='container'>
 
-            <h6>{question}</h6>
+            <h6>{question.replace('<p>', '').replace('</p>', '')}</h6>
             <p className='option'>{option}</p>
 
-
-
-            {/* <p>{options}</p><br /> */}
-            {/* {
-                questions.questions.options.map(options => <Options
-                    key={id}
-                    options={options}
-                ></Options>)
-            } */}
         </div>
     );
 };
