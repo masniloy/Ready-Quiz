@@ -8,6 +8,8 @@ import Blog from './Components/Blog/Blog';
 import Head from './Components/Head/Head';
 import Topic from './Components/Topic/Topic';
 import Quiz from './Components/Quiz/Quiz';
+import Question from './Components/Question/Question';
+import Options from './Components/Options/Options';
 
 
 function App() {
@@ -25,6 +27,8 @@ function App() {
         { path: 'statistics', element: <Statistics></Statistics> },
         { path: 'Blog', element: <Blog></Blog> },
         { path: 'Head', element: <Head></Head> },
+        { path: 'Question', element: <Question></Question> },
+        { path: 'Option', element: <Options></Options> },
         {
           path: 'Topics/:id',
           loader: async ({ params }) => {
