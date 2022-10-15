@@ -5,7 +5,7 @@ import Card from 'react-bootstrap/Card';
 import './Topic.css';
 import { Link } from 'react-router-dom';
 import Quiz from '../Quiz/Quiz';
-
+import Statistics from '../Statistics/Statistics';
 
 
 const Topic = ({ topic }) => {

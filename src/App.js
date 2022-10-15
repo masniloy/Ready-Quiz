@@ -24,7 +24,7 @@ function App() {
           },
           element: <Topics></Topics>
         },
-        { path: 'statistics', element: <Statistics></Statistics> },
+
         { path: 'Blog', element: <Blog></Blog> },
         { path: 'Head', element: <Head></Head> },
         { path: 'Question', element: <Question></Question> },
@@ -35,8 +35,15 @@ function App() {
             // console.log(params)
             return fetch(`https://openapi.programming-hero.com/api/quiz/${params.id}`)
           },
-          element: <Quiz></Quiz>
-        }
+          element: <Quiz></Quiz>,
+        }, {
+          path: 'Statistics',
+          // loader: async ({ params }) => {
+          //   // console.log(params)
+          //   return fetch(`https://openapi.programming-hero.com/api/quiz/${params.id}`)
+          // },
+          element: <Statistics></Statistics>
+        },
       ]
     },
     { path: 'nav', element: <Main></Main> },

@@ -18,7 +18,7 @@ const Blog = () => {
                     </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="2">
-                    <Accordion.Header># What is useref in react ?</Accordion.Header>
+                    <Accordion.Header># What is useRef in react ?</Accordion.Header>
                     <Accordion.Body>
                         Essentially, useRef is like a “box” that can hold a mutable value in its .current property. You might be familiar with refs primarily as a way to access the DOM. If you pass a ref object to React with , React will set its .current property to the corresponding DOM node whenever that node changes.
                     </Accordion.Body>

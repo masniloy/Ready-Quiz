@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import Question from '../Question/Question';
 
@@ -16,6 +16,7 @@ const Quiz = () => {
                     questions={question}
                 ></Question>)
             }
+
         </div >
 
     );
