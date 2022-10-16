@@ -6,8 +6,9 @@ const Statistics = () => {
     const { data } = Data;
 
     return (
-        <div className='container mt-5 d-flex align-items-center justify-content-center' style={{ height: '60vh', width: "100%" }} >
-            <ResponsiveContainer width="75%" height="75%">
+        <div className='container mt-5  align-items-center justify-content-center' style={{ height: '60vh', width: "100%" }} >
+            <h1>Total Question</h1>
+            <ResponsiveContainer width="100%" height="100%">
                 <LineChart
 
                     data={data}

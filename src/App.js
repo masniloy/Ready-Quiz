@@ -10,12 +10,15 @@ import Topic from './Components/Topic/Topic';
 import Quiz from './Components/Quiz/Quiz';
 import Question from './Components/Question/Question';
 import Options from './Components/Options/Options';
+import Error from './Components/Error/Error';
 
 
 function App() {
   const router = createBrowserRouter([
     {
-      path: '/', element: <Main></Main>, children: [
+      path: '/', element: <Main></Main>,
+      errorElement: <Error></Error>,
+      children: [
         { path: '/', element: <Head></Head> },
         {
           path: 'Topics',
