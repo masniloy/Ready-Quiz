@@ -1,6 +1,8 @@
 import React from 'react';
 import Options from '../Options/Options';
 import './Question.css';
+import Card from 'react-bootstrap/Card';
+import ListGroup from 'react-bootstrap/ListGroup';
 const Question = (questions) => {
     const { question, options, id } = questions.questions;
     console.log(options)
@@ -12,9 +14,8 @@ const Question = (questions) => {
         <div className='container'>
 
             <h6>{question.replace('<p>', '').replace('</p>', '')}</h6>
-            <p className='option'>{option}</p>
-
-        </div>
+            <button className='option'>{option}</button>
+        </div >
     );
 };
 

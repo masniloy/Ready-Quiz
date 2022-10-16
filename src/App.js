@@ -37,11 +37,11 @@ function App() {
           },
           element: <Quiz></Quiz>,
         }, {
-          path: 'Statistics',
-          // loader: async ({ params }) => {
-          //   // console.log(params)
-          //   return fetch(`https://openapi.programming-hero.com/api/quiz/${params.id}`)
-          // },
+          path: '/Statistics',
+          loader: async () => {
+            // console.log(params)
+            return fetch('https://openapi.programming-hero.com/api/quiz')
+          },
           element: <Statistics></Statistics>
         },
       ]
