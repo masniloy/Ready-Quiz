@@ -8,8 +8,7 @@ const Quiz = () => {
 
 
     return (
-        < div >
-            <p>ki {quiz.data.questions.length}</p>
+        < div className='container mt-5' >
             {
                 quiz.data.questions.map(question => <Question
                     key={question.id}
