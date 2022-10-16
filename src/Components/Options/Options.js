@@ -14,12 +14,12 @@ const Options = ({ option, key, correct }) => {
     return (
         <div className='container '>
             <div >
-                <div className=' d-flex align-items-center option'>
+                <div className=' d-flex align-items-center option' >
                     <div className=' d-flex justify-content-center align-items-center mr-5'>
                         <input
                             onClick={(forClick) => correctAnswer(forClick.target.value)}
                             type="radio"
-                            name={key}
+                            name='ok'
                             value={option}
                         />
                         <div className='d-flex justify-content-center align-items-center' >

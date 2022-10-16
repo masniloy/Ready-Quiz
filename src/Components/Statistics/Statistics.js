@@ -7,7 +7,7 @@ const Statistics = () => {
 
     return (
         <div className='container mt-5  align-items-center justify-content-center' style={{ height: '60vh', width: "100%" }} >
-            <h1>Total Question</h1>
+            <h1>Total Questions</h1>
             <ResponsiveContainer width="100%" height="100%">
                 <LineChart
 
