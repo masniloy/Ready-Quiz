@@ -3,7 +3,7 @@ import './Option.css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const Options = ({ option, key, correct }) => {
+const Options = ({ option, id, correct }) => {
     const correctAnswer = (selectOption) => {
         if (selectOption === correct) {
             toast.success("Your Answer Is Right.");
@@ -19,7 +19,7 @@ const Options = ({ option, key, correct }) => {
                         <input
                             onClick={(forClick) => correctAnswer(forClick.target.value)}
                             type="radio"
-                            name='ok'
+                            name={id}
                             value={option}
                         />
                         <div className='d-flex justify-content-center align-items-center' >

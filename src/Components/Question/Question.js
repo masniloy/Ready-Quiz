@@ -30,6 +30,7 @@ const Question = (questions) => {
                     options.map(option => <Options
                         option={option}
                         key={id}
+                        id={id}
                         correct={correctAnswer}
                     ></Options>)
                 }
